@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>caffe_order</class>
+ <widget class="QDialog" name="caffe_order">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>863</width>
+    <height>683</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>휴먼둥근헤드라인</family>
+    <pointsize>12</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>카페메뉴</string>
+  </property>
+  <widget class="QLabel" name="menu_label">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>10</y>
+     <width>131</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>휴먼둥근헤드라인</family>
+     <pointsize>24</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>[ 메뉴 ]</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cocoa_button">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>100</y>
+     <width>171</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>cocoa.jpg</normaloff>cocoa.jpg</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>170</width>
+     <height>170</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="cocoa_label">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>280</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>코코아</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="latte_button">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>100</y>
+     <width>171</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>latte.jpg</normaloff>latte.jpg</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>170</width>
+     <height>170</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="latte_label">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>280</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>카페라떼</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="milkshake_button">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>100</y>
+     <width>171</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>milk_shake.jpg</normaloff>milk_shake.jpg</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>170</width>
+     <height>170</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="milkshake_label">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>280</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>밀크쉐이크</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ristretto_button">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>100</y>
+     <width>171</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>ristretto.jpg</normaloff>ristretto.jpg</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>170</width>
+     <height>170</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ristretto_label">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>280</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>리스트레토</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>340</y>
+     <width>861</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>5</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>60</y>
+     <width>861</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>5</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="order_label">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>360</y>
+     <width>191</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>휴먼둥근헤드라인</family>
+     <pointsize>24</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>[ 주문목록 ]</string>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="order_listbox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>410</y>
+     <width>841</width>
+     <height>191</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>휴먼둥근헤드라인</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="order_button">
+   <property name="geometry">
+    <rect>
+     <x>750</x>
+     <y>610</y>
+     <width>101</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>휴먼둥근헤드라인</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>주문하기</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="delete_button">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>610</y>
+     <width>101</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>휴먼둥근헤드라인</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>제거하기</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="cocoa_label_2">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>310</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>1000/1500</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="cocoa_label_3">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>310</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>2000/2500</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="cocoa_label_4">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>310</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>3000/3500</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="cocoa_label_5">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>310</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>4000/4500</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>cocoa_button</sender>
+   <signal>clicked()</signal>
+   <receiver>caffe_order</receiver>
+   <slot>cocoa_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>156</x>
+     <y>152</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>184</x>
+     <y>281</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>latte_button</sender>
+   <signal>clicked()</signal>
+   <receiver>caffe_order</receiver>
+   <slot>latte_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>341</x>
+     <y>207</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>419</x>
+     <y>278</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ristretto_button</sender>
+   <signal>clicked()</signal>
+   <receiver>caffe_order</receiver>
+   <slot>ristretto_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>757</x>
+     <y>185</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>805</x>
+     <y>282</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>delete_button</sender>
+   <signal>clicked()</signal>
+   <receiver>caffe_order</receiver>
+   <slot>delete_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>688</x>
+     <y>640</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>569</x>
+     <y>621</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>order_button</sender>
+   <signal>clicked()</signal>
+   <receiver>caffe_order</receiver>
+   <slot>order_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>806</x>
+     <y>634</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>471</x>
+     <y>645</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>milkshake_button</sender>
+   <signal>clicked()</signal>
+   <receiver>caffe_order</receiver>
+   <slot>milkshake_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>586</x>
+     <y>204</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>628</x>
+     <y>277</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>cocoa_clicked()</slot>
+  <slot>latte_clicked()</slot>
+  <slot>milkshake_clicked()</slot>
+  <slot>ristretto_clicked()</slot>
+  <slot>delete_clicked()</slot>
+  <slot>order_clicked()</slot>
+ </slots>
+</ui>

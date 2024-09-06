@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>order</class>
+ <widget class="QDialog" name="order">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>309</width>
+    <height>283</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>휴먼둥근헤드라인</family>
+    <pointsize>12</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>카페주문</string>
+  </property>
+  <widget class="QLabel" name="menu_label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>281</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>휴먼둥근헤드라인</family>
+     <pointsize>22</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>메뉴 : </string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="ice_checkbox">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>90</y>
+     <width>71</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>휴먼둥근헤드라인</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>ICE</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="hot_checkbox">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>90</y>
+     <width>91</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>HOT</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="check_button">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>220</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>확인</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cancel_button">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>220</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>취소</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="shotcost_label">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>160</y>
+     <width>171</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>샷 없음</string>
+   </property>
+  </widget>
+  <widget class="QSlider" name="shot_slider">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>140</y>
+     <width>171</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>ArrowCursor</cursorShape>
+   </property>
+   <property name="maximum">
+    <number>2</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="num_line">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>60</y>
+     <width>113</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="num_label">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>60</y>
+     <width>51</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>수량</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>cancel_button</sender>
+   <signal>clicked()</signal>
+   <receiver>order</receiver>
+   <slot>cancel_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>173</x>
+     <y>234</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>197</x>
+     <y>180</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ice_checkbox</sender>
+   <signal>clicked()</signal>
+   <receiver>order</receiver>
+   <slot>ice_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>80</x>
+     <y>108</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>235</x>
+     <y>131</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>hot_checkbox</sender>
+   <signal>clicked()</signal>
+   <receiver>order</receiver>
+   <slot>hot_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>186</x>
+     <y>106</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>206</x>
+     <y>82</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>check_button</sender>
+   <signal>clicked()</signal>
+   <receiver>order</receiver>
+   <slot>check_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>72</x>
+     <y>235</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>123</x>
+     <y>197</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>shot_slider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>order</receiver>
+   <slot>shot_changed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>128</x>
+     <y>140</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>52</x>
+     <y>186</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>cancel_clicked()</slot>
+  <slot>ice_clicked()</slot>
+  <slot>hot_clicked()</slot>
+  <slot>check_clicked()</slot>
+  <slot>shot_changed()</slot>
+ </slots>
+</ui>
